@@ -1,0 +1,33 @@
+/* Estilos de los botones */
+
+.btn-oscuro {
+    background: #6D214F;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+}
+
+.btn-oscuro:hover {
+    background: #B33771;
+    cursor: pointer;
+}
+
+.btn-claro {
+    background: #30CE88;
+    border: 2px solid #CAD3C8;
+    border-radius: 5px;
+    color: #CAD3C8;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+}
+
+.btn-claro:hover {
+    border: 2px solid #27A09E;
+    color: #fff;
+    transition: all 1s;
+}

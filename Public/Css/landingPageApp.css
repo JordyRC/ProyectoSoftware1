@@ -1,0 +1,625 @@
+:root{
+    --1: #205374;
+    --2: #27A09E;
+    --3: #30CE88;
+    --4: #7DE393;
+    --5: #D3F5CE;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/**********************Globales***************************/
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body form {
+    width: fit-content;
+    margin: auto;
+}
+
+/****** Fuentes *****/
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, button, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.fuenteApp {
+    font-family: 'Dancing Script', cursive;
+    font-size: 140px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.fuenteAppNav {
+    font-family: 'Dancing Script', cursive;
+}
+
+.fuenteGrupoNav{
+    /* font-family: 'Coda', cursive; */
+    font-family: 'Homenaje', sans-serif;
+}
+
+/**** Navegación **********/
+header{
+    align-items: center;
+    background: #205374;
+    display: flex;
+    height: 75px;
+    /* justify-content: space-between; */
+    gap: 600px;
+    padding-left: 40px;
+    padding-right: 70px;
+}
+
+.menuFijo {
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {    
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.navUsuario{
+    display: flex;
+    gap: 2px;
+}
+
+.navUsuario a:hover{
+    color: #7DE393;    
+    transition: color 2s;
+}
+
+header nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover{    
+    
+    color: #7DE393;    
+    transition: color 2s;
+}
+
+
+/* Boton Registrar */
+
+input[type=text],
+input[type=date],
+input[type=number],
+input[type=password],
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button]{
+    background-color: rgb(8, 140, 96);
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    background-color: #45a049;
+}
+
+/* crea la columnas para que floten una despues de la otra */
+/* .column{
+    float: left;
+    padding: 10px;
+} */
+
+
+.boton {
+    background: #205374;
+    border: 2px solid #CAD3C8;
+    border-radius: 5px;
+    color: #CAD3C8;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    width: 130px;
+}
+
+.boton:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 1s;
+}
+
+/********************* Seccion1 Banner *************************/
+
+#sctBanner{
+    align-items: flex-end;
+    background-image: url(../Img/christophe-rollando-_N7IJsUJNiE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4%;    
+    align-items: flex-start;
+    /* position: relative; */
+    padding-top: 70px;
+}
+
+#sctBanner div{
+    width: min-content;
+}
+
+
+/* #sctBanner h1{
+    font-size: 105px;
+    font-weight: 700;
+    margin-bottom: 20px;
+} */
+
+#sctBanner p{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+
+
+/******************* Seccion2 Pregunta1 ***************************/
+
+#sctPregunta {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+}
+
+
+#sctPregunta h2{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px ;
+    color: #205374;
+}
+
+#sctPregunta p{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/******************* Seccion3 Beneficios ***************************/
+
+#sctBeneficios {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-left: 230px;
+    padding-right: 230px;
+}
+
+.contenedorBeneficios {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+#sctBeneficios h2 {
+    font-size: 45px;
+    padding-bottom: 60px;
+    color: #205374;
+}
+
+.beneficio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+#sctBeneficios p {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.beneficio img{
+    height: 230px;
+    width: 230px;
+    border-radius: 15px;
+}
+
+
+/******************* Seccion4 Expertos *************************/
+
+#sctExpertos {
+    background-color: #27A09E;
+    display: block;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.contenedorExpertos{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+#sctExpertos h2 {
+    font-size: 45px;
+    padding-bottom: 60px;
+    color: #ffffff;
+   text-align: center;
+}
+
+.experto{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.experto h3 {
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#sctExpertos p {
+    font-size: 27px;
+    padding: 15px 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.experto img{
+    height: 500px;
+    width: 370px;
+}
+
+/*********************** Seccion5 Planes de Ayuno ****************************/
+
+#sctplanesAyuno {
+    display: block;
+    padding-bottom: 100px;
+}
+
+.contenedorTextoPlanes {
+    display: block;
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 29px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 1.5;
+}
+
+.contenedorPlanes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    margin-left: 130px;
+    margin-right: 95px;
+}
+
+#sctplanesAyuno h2 {
+    font-size: 45px;
+    padding-bottom: 40px;
+    padding-left: 230px;
+    padding-top: 80px;
+    color: #205374;
+}
+
+.contenedorPlanes li{
+    padding-top: 80px;
+    font-size: 30px;
+    color: #27A09E;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.contenedorPlanes p{
+    padding-top: 20px;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.imgPlanes img {
+    height: 600px;
+    width: 540px;
+    border-radius: 15px;
+}
+
+#marqueAnuncio{
+    color: #205374;
+    font-size: 35px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.contenedorMarquee{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.botonPlanes {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+
+/******************* Seccion6 Mitos ****************************/
+
+#sctMitos h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px ;
+    padding-top: 50px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+#sctMitos {
+    background-image: url(../Img/81.jpg);
+    display: block;
+    padding-top: 90px;
+    padding-bottom: 130px;
+    padding-left: 230px;
+    padding-right: 230px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedorMitos{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.mito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+#sctMitos p {
+    font-size: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.mito img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+/******************** Seccion7 Consejos **************************/
+
+#sctConsejos {
+    display: block;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+#sctConsejos h2 {
+    font-size: 45px;
+    padding-bottom: 100px;
+    padding-left: 230px;
+    color: #205374;
+}
+
+.contenedorConsejos {
+    display: block;
+    padding-left: 130px;
+    padding-right: 130px;
+
+}
+
+.consejo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-top: 50px;
+}
+
+.consejoMovil {
+    background-color: #27A09E;
+    border-radius: 15px;
+}
+
+.consejoMovil h3 {
+    color: #ffffff;
+}
+
+
+
+.consejo img{
+    height: 330px;
+    width: 330px;
+    border-radius: 15px;
+}
+
+.consejo h3 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.consejo p {
+    padding-top: 20px;
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+
+
+/* Icono flecha */
+
+.go-top {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	text-decoration: none;
+	padding: 1em;
+	border-radius: 3px;
+  }
+  
+  .go-top img:hover{
+	transform: scale(1.5);
+	transition: all 0.8s; 
+  }
+
+
+
+/***************** Footer ************************/
+
+.contenedorFooter {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #205374;
+    color: #ffffff;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.contenedorFooter h3 {
+    font-size: 30px;
+}
+
+.contenedorFooter h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contenedorFooter a {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.contenedorFooter p {
+    font-size: 15px;
+}
+
+.footer1{
+    display: flex;
+    margin-bottom: 0px;
+    gap: 80px;
+}
+
+.queruTech {
+    margin-right: 100px;
+}
+
+.explorar a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contactenos .contacto {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+
+/* Animación iconos */
+.iconos img:hover  {
+	transition: all 1s ease-in-out;
+	transform: rotate(360deg);
+  }
+
+
+  .footer2  {
+    text-align: right;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .footer2 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .footer3 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+ 

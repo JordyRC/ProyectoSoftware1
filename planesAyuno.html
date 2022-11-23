@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Public/Img/programar.png">
+    <title>Planes de Ayuno</title>
+    <!-- Fuente p / a -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Fuente App -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Fuente Grupo -->
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+    <!-- Libreria Animación Animate.css -->
+    <link rel="stylesheet" href="./Public/Css/animate.css">
+    <link rel="stylesheet" href="./Public/Css/planesAyuno.css">
+</head>
+<body>
+
+    <header class="menuFijo">
+        <nav>          
+          <div class="navUsuario">
+            <img src="./Public/Img/programar.png" width="32" height="32" alt="">
+            <br>
+            <a class="fuenteAppNav" href="landingPageApp.html">NutriPlan</a>
+          </div>
+          <a href="logros.html">Logros</a>
+          <a href="pesos.html">Pesos</a>
+          <a href="planesAyuno.html">Planes</a>
+          <a href="actFisica.html">Act. Física</a>
+          <a href="enfermedades.html">Enfermedades</a>
+          <a href="recetas.html">Recetas</a>
+        </nav>
+          <div class="navUsuario">
+            <img src="./Public/Img/usuario2.png" width="25" height="25" alt="">
+            <br>
+          <a href="perfil.html" id="perfil">Perfil</a>
+          </div>  
+      </header>
+      <div class="bannerActFisica">
+        <h1 class="tituloActFisica wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">Planes de Ayuno <br> Intermitente</h1>
+      </div>         
+
+      <main>
+        <div class="preguntaPlan">
+            <h2>¿Cómo escoger un plan de ayuno intermitente?</h2>
+        </div>
+        
+        <section id="sctPlanes">
+            
+            <div class="textoPlanes">
+                <div class="escogerPlan">
+                    <br>
+                    <br>
+                    <p>  El ayuno intermitente quiere decir, 
+                         que las ingestas van a estar distribuidas en una determinada cantidad de horas durante todo el día, por lo que es importante considerar los siguientes puntos para escoger un plan que se adapte a nuestro estilo de vida habitual 
+                     </p>
+                     <br>
+                     
+                     <ul type = "circle">
+                        <li>Tu régimen de ayuno intermitente no debe generarte estrés. </li>
+                        <li>Debes elegir un plan que no te haga ingerir posteriormente una cantidad copiosa de alimentos.</li>
+                        <li>El protocolo que sigas debe ser personalizado, ir de la mano de tu rutina, ocupaciones y preferencias.</li>
+                     </ul>
+            
+                </div>
+
+                <div class="planRegistro">
+                    <button id="registreSuPlan" type="button" class="boton wow pulse"  data-wow-iteration="infinite">Registrar</button>
+                </div>
+
+            </div>
+
+            <div class="modalesPlanes">
+
+                <div class="planes1">
+
+                    <!--Plan 1-->
+                    <div class="plan1">
+                        <div>
+                            <img src="./Public/Img/plan1.jpg">
+                        </div>
+                        <button class="botonVerPlan" id="btnPlan168"> Plan 16:8</button>
+
+                        <div id="containerModalPlan1" class="plan1ModalContainer">
+                           <div class="modalPlan">
+                                <div class="headermodal">
+                                    <span class="cerrar" id="spanCerrarmodal1">&times;</span> 
+                                    <h2>Plan 16:8</h2>
+                                </div>
+
+                                <div class="textoModal">
+                                    <p>
+                                        Para el plan 16:8, hay que ayunar cada día durante 16 horas y se puede comer durante las siguiente 8 horas.
+                                        Por eso se trata de una de las dietas para adelgazar más sencillas. Normalmente las 16 horas de ayuno incluyen 
+                                        las horas de sueño por lo que es más sencillo de lo que piensas.
+                                    </p>
+                                </div>
+                              
+                                <div class="modalFooter">
+                                    <!-- <button class="botonCerrarPlan" id="closePlan1"> Cerrar</button> -->
+                                </div>                                
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="plan1">
+                        <!--Plan 2-->                        
+                        <div>
+                            <img src="./Public/Img/slim-woman-with-measuring-tape.jpg" alt="plan14:10">        
+                        </div>    
+                        <button class="botonVerPlan" id="btnPlan1410"> Plan 14:10</button>
+
+                        <div id="containerModalPlan2" class="plan2ModalContainer">
+                            <div class="modalPlan">
+                                <div  class="headermodal">  
+                                    <span class="cerrar" id="spanCerrarmodal2">&times;</span>                                   
+                                    <h2>Plan 14:10</h2>
+                                </div>
+                                
+                                <div class="textoModal">
+                                    <p>
+                                    Para el plan 14:10, hay que ayunar cada día durante 14 horas y se puede comer durante las siguiente 10 horas.
+                                    Una forma habitual de hacerlo es comer normalmente en las horas comprendidas entre las 9 de la mañana y las 
+                                    7 de la tarde. El periodo comprendido entre las 7 de la tarde y las 9 de la mañana del día siguiente es el 
+                                    periodo de ayuno.
+                                    </p>
+                                </div>
+                                                                
+                                <div class="modalFooter">
+                                    <!-- <button class="botonCerrarPlan" id="closePlan2"> Cerrar</button> -->
+                                </div>
+                                                    
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
+                </div>
+                
+                <div class="planes1">
+                    <!--Plan 3-->                    
+                    <div class="plan1">
+
+                        <div>
+                            <img src="./Public/Img/closeup-alarm-clock-on-blurred-food-background.jpg" alt="plan18-6">
+                        </div>
+                        <button class="botonVerPlan" id="btnPlan186" >Plan 18:6</button>
+                    
+                        <div id="containerModalPlan3" class="plan3ModalContainer">
+                            <div class="modalPlan">
+                                <div class="headermodal">
+                                    <span class="cerrar" id="spanCerrarmodal3">&times;</span> 
+                                    <h2>Plan 18:6</h2>
+                                </div>
+
+                                <div class="textoModal">
+                                    <p>
+                                    El horario de ayuno 18:6 implica un período de ayuno de 18 horas junto con un período de alimentación 
+                                    de 6 horas a lo largo del día. Dentro del período de seis horas, es probable que comas dos comidas, 
+                                    y estas se pueden programar para adaptarse a tus requisitos de trabajo o vida personal.
+                                    </p>
+                                </div>
+                                
+                                <div class="modalFooter">
+                                    <!-- <button class="botonCerrarPlan" id="closePlan3"> Cerrar</button> -->
+                                </div>
+                                
+                    
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                
+                    <!--Plan 4-->
+                    <div class="plan1">
+                        <div class="plan4">
+                            <img src="./Public/Img/sportswoman-in-sportswear-training-in-gym.jpg" alt="plan20-4">
+                        </div>
+                        <button class="botonVerPlan" id="btnPlan204">Plan 20:4</button>
+                    
+                        <div id="containerModalPlan4" class="plan4ModalContainer">
+                           
+                            <div class="modalPlan">
+                                <div class="headermodal">
+                                    <span class="cerrar" id="spanCerrarmodal4">&times;</span> 
+                                   <h2>Plan 20:4</h2> 
+                                </div>
+                                <div class="textoModal"> 
+                                    <p>
+                                        El ayuno intermitente de 20 horas, comúnmente llamado ayuno 20/4 es un protocolo de ayuno intermedio
+                                        en el que limitamos la ventana de alimentación a sólo 4 horas al día, normalmente realizando 2 ingestas.
+                                    </p>
+                                </div>
+                                <div class="modalFooter">
+                                    <!-- <button class="botonCerrarPlan" id="closePlan4"> Cerrar</button> -->
+                                </div>                              
+                            </div>
+
+                        </div>
+                    </div>             
+
+                </div>               
+            </div>
+        </section>
+
+
+        <!-- INICIO tabla y modal Registro -->
+          
+        <section>
+            <!-- Inicio Registro del Plan  -->
+           
+            <div>
+                <h1 class="tituloTabla">Historial Planes de Ayuno</h1>
+                
+            </div>
+            
+
+
+            <!--Inicio Ventana Modal-->
+            <div id="containerModalRegistroPlan" class="registroPlanModalContainer">
+                <br>
+                <div class="modalForm">
+                    <div class="headermodal"> 
+                        
+                        <span class="cerrar" id="spanCerrarmodalForm">&times;</span> 
+                       <h2>Registro de Plan</h2> 
+                    </div> 
+                    
+                    <!--Inicio Form-->
+                    <div class="formRegistroPlan">
+
+                        <form id="registrarPlan">
+                        
+                            <div class="fechaInicio">
+                                <label for="fechaInicio">Fecha Inicio <input type="date" id="dateInicio" name="dateInicio" required></label>                      
+                            
+                            </div>
+                
+                            <div class="horaInicio">
+                                <label for="horaInicio">Hora Inicio <input type="time" id="timeIncio" name="timeIncio" required></label> 
+                                
+                            </div>
+                        
+                            <div class="fechaFinal">
+                                <label for="fechaFinal">Fecha final <input type="date" id="dateFinal" name="dateFinal" required></label>
+                                
+                            </div>         
+                    
+                            <div class="horaFinal">
+                                <label for="horaFinal">Hora Final <input type="time"  id="timeFinal" name="timeFinal" required>  </label>
+                                        
+                            </div>
+                    
+                            <div class="listaOpciones">
+                                <label for="Planescogido">Plan de ayuno
+                                    <select name="planAyuno" id="opcionesPlanes" required>
+                                        <option> </option>
+                                        <option value="Plan 16:8">Plan 16:8</option>
+                                        <option value="Plan 14:10">Plan 14:10</option>
+                                        <option value="Plan 18:6">Plan 18:6</option>
+                                        <option value="Plan 20:4">Plan 20:4</option>
+                                    </select>
+                                </label>
+                            </div>       
+                            
+                            
+                            <button id="agregarPlan"  >Registrar</button>
+                    
+                        </form>
+                
+                    </div>
+                    <!--Fin form-->
+
+                </div>
+            </div>
+            <!--Fin Ventana Modal-->
+
+
+
+            <div class="tablaRegistos ">
+                <table id="registrosPlan">
+                    <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Fecha de Incio</th>
+                            <th>Hora de Incio</th>
+                            <th>Fecha de finalizacion</th>
+                            <th>Hora de finalizacion</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+        </section>
+        <!-- FIN tabla y modal Registro  -->
+        
+
+        
+      </main>
+
+      <footer class="contenedorFooter">
+
+        <div class="footer1">
+            <div class="queruTech">
+                <h3 class="fuenteAppNav">NutriPlan</h3>
+                <p>El ayuno intermitente es actualmente una de las tendencias <br> para tener buena forma y salud más populares del mundo. <br> Las personas suelen ponerlo en práctica para perder peso, <br> mejorar su salud y simplificar sus estilos de vida.</p>
+                <div class="iconos">
+                    <img  src="./Public/Img/facebook.png" width="35px" height="35px" alt="">
+                    <img  src="./Public/Img/instagram.png" width="35px" height="35px" alt="">
+                </div>              
+            </div>
+            <div class="explorar">
+                <h4>Explorar</h4>
+                <a href="landingPageApp.html">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="logros.html">Logros</a>
+                <a href="pesos.html">Pesos</a>
+                <a href="planesAyuno.html">Planes</a>
+                <a href="actFisica.html">Act. Física</a>
+                <a href="enfermedades.html">Enfermedades</a>
+                <a href="recetas.html">Recetas</a> 
+                <a href="landingPageGrupo.html">QueruTech</a>           
+    
+            </div>
+            <div class="visitenos">
+                <h4>Visítenos</h4>
+                <p>
+                  San José, Barrio Don Bosco, 200 metros sur de <br> Pizza Hut, Paseo Colón, San José.
+                </p>
+            </div>
+            <div class="contactenos">
+                <h4>Contáctenos</h4>
+                <div class="contactenos2">
+                    <div class="contacto">
+                        <img src="./Public/Img/llamada-telefonica.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4047</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/fax.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4174</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/correo-electronico.png" width="17px" height="17px" alt="">
+                        <p>nutriplan@gmail.com</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="footer2">
+          <p>©NutriPlan. Todos los derechos reservados, 2022.</p>
+          <a href="#">Política de Privacidad | </a>
+          <a href="#">Términos y Condiciones</a>                         
+        </div>           
+    </footer> 
+
+
+      
+    
+</body>
+
+    <!-- Libreria WOW.JS -->
+        <script src="./Public/Js/Controller/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
+        <script src="./Public/Js/Controller/planesAyuno.js"></script>
+</html>

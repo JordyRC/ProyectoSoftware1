@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Public/Img/programar.png">
+    <title>Act. Física</title>
+    <!-- Fuente p / a -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Fuente App -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Fuente Grupo -->
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+    <!-- Libreria Animación Animate.css -->
+    <link rel="stylesheet" href="./Public/Css/animate.css">
+    <link rel="stylesheet" href="./Public/Css/actFisica.css">
+</head>
+<body>
+    
+    <header class="menuFijo">
+        <nav>          
+          <div class="navUsuario">
+            <img src="./Public/Img/programar.png" width="32" height="32" alt="">
+            <br>
+            <a class="fuenteAppNav" href="landingPageApp.html">NutriPlan</a>
+          </div>
+          <a href="logros.html">Logros</a>
+          <a href="pesos.html">Pesos</a>
+          <a href="planesAyuno.html">Planes</a>
+          <a href="actFisica.html">Act. Física</a>
+          <a href="enfermedades.html">Enfermedades</a>
+          <a href="recetas.html">Recetas</a>
+        </nav>
+          <div class="navUsuario">
+            <img src="./Public/Img/usuario2.png" width="25" height="25" alt="">
+            <br>
+          <a href="perfil.html" id="perfil">Perfil</a>
+          </div>  
+      </header>
+      <div class="bannerActFisica">
+        <h1 class="tituloActFisica wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">Act. Física</h1>
+      </div>         
+
+      <main>
+
+        <h1>Registro de Actividades Físicas</h1>
+        <section class="sctRegistroEnfermedad">
+            <div>
+                <p>
+                    La actividad física es esencial para el mantenimiento y mejora de la salud y la prevención de las enfermedades, para todas las personas y a cualquier edad. Contribuye a la prolongación de la vida y a mejorar su calidad.
+                </p>
+    
+                <button id="botonRegistrarUsuario" type="button" class="boton wow pulse"  data-wow-iteration="infinite">Registrar</button>
+            </div>
+            <div>
+                <img src="./Public/Img/jannes-glas-0NaQQsLWLkA-unsplash.jpg" alt="">
+            </div>
+            
+        </section>
+
+
+
+        <section class="graficosActFisica">
+            <div>
+                <h1>Total de Horas</h1>
+                <img src="./Public/Img/GraficoHoras.png" alt="">
+            </div>
+            <div>
+                <h1>Total de Días</h1>
+                <img src="./Public/Img/GraficoDias.png" alt="">
+            </div>
+        </section> 
+        
+               
+
+         <section class="sctRegistroActividad"> 
+            <div id="containerModalRegistroActFisica" class="containerModalRegistroActFisica">
+                
+                <div class="modalForm">
+
+                    <div class="headerform"> 
+                        
+                        <span class="cerrar" id="spanRegistroActFisica">&times;</span> 
+                        <h2>Registro de Act. Física</h2>
+                    </div> 
+
+                    <div class="formRegistroActFisica">
+                        <form  id="formActFisica">                
+                
+                            <div class="registroAct">
+                                <label for="txtFechaInicio">Fecha Inicio</label>
+                                 <input type="date" id="txtFechaInicio" name="txtFechaInicio" required>
+                            </div>
+   
+                            <div class="registroAct">
+                              <label for="txtHoraInicio">Hora Inicio</label>
+                              <input type="time" id="txtHoraInicio" name="txtHoraInicio" required>
+                            </div>
+    
+                            <div class="registroAct">
+                                <label for="txtHoraFinal">Hora Final</label>
+                                <input type="time" id="txtHoraFinal" name="txtHoraFinal" required>
+                            </div>
+    
+                            <div class="registroAct">
+                                <label for="sleActividadFisica">Actividad Física</label>
+                                <select name="sleActividad" id="sleActividad" >
+                                    <option value="">--Seleccione--</option>
+                                    <option value="Ciclismo">Ciclismo</option>
+                                    <option value="Gimnasia">Gimnasia</option>
+                                    <option value="Natación">Natación</option>
+                                    <option value="Senderismo">Senderismo</option>
+                                    <option value="Fútbol">Fútbol</option>
+                                </select>
+                            </div>
+    
+                            <div class="registroAct">
+                                <label for="txtOtraActividad">Otra Actividad Física</label>
+                                <input type="text" id="txtOtraActividad" name="txtOtraActividad">
+                            </div>                         
+                    
+    
+                            <button class="tipoBoton" id="registrarDatos" type="submit">Registrar</button>
+              
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="sombra">
+                <img src="./Public/Img/couple-running-in-nature.jpg" alt="">
+            </div> -->
+            
+        </section> 
+
+        <section class="sctTablaActFisica">
+            <div>
+                <table id="tablaActFisica">
+                    <thead id="thTablaActFisica">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Fecha</th>
+                            <th>Horas de Inicio</th> 
+                            <th>Hora de Finalización </th>   
+                            <th>Horas Totales </th>                               
+                        </tr>
+                    </thead>
+                   
+                </table>
+            </div>                      
+        </section>
+
+                 
+      </main>
+
+      <footer class="contenedorFooter">
+
+        <div class="footer1">
+            <div class="queruTech">
+                <h3 class="fuenteAppNav">NutriPlan</h3>
+                <p>El ayuno intermitente es actualmente una de las tendencias <br> para tener buena forma y salud más populares del mundo. <br> Las personas suelen ponerlo en práctica para perder peso, <br> mejorar su salud y simplificar sus estilos de vida.</p>
+                <div class="iconos">
+                    <img  src="./Public/Img/facebook.png" width="35px" height="35px" alt="">
+                    <img  src="./Public/Img/instagram.png" width="35px" height="35px" alt="">
+                </div>              
+            </div>
+            <div class="explorar">
+                <h4>Explorar</h4>
+                <a href="landingPageApp.html">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="logros.html">Logros</a>
+                <a href="pesos.html">Pesos</a>
+                <a href="planesAyuno.html">Planes</a>
+                <a href="actFisica.html">Act. Física</a>
+                <a href="enfermedades.html">Enfermedades</a>
+                <a href="recetas.html">Recetas</a> 
+                <a href="landingPageGrupo.html">QueruTech</a>           
+    
+            </div>
+            <div class="visitenos">
+                <h4>Visítenos</h4>
+                <p>
+                  San José, Barrio Don Bosco, 200 metros sur de <br> Pizza Hut, Paseo Colón, San José.
+                </p>
+            </div>
+            <div class="contactenos">
+                <h4>Contáctenos</h4>
+                <div class="contactenos2">
+                    <div class="contacto">
+                        <img src="./Public/Img/llamada-telefonica.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4047</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/fax.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4174</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/correo-electronico.png" width="17px" height="17px" alt="">
+                        <p>nutriplan@gmail.com</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="footer2">
+          <p>©NutriPlan. Todos los derechos reservados, 2022.</p>
+          <a href="#">Política de Privacidad | </a>
+          <a href="#">Términos y Condiciones</a>                         
+        </div>           
+    </footer> 
+
+
+        
+
+    
+</body>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./Public/Js/Controller/controladorActFisica.js"></script>
+      <!-- Libreria WOW.JS -->
+        <script src="./Public/Js/Controller/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
+
+
+</html>

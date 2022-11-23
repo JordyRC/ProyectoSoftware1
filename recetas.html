@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Public/Img/programar.png">
+    <title>Recetas</title>
+    <!-- Fuente p / a -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Fuente App -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Fuente Grupo -->
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+    <!-- Libreria Animación Animate.css -->
+    <link rel="stylesheet" href="./Public/Css/animate.css">
+    <!-- Libreria Transiciones o Cortinas -->
+    <link href="./Public/Css/imagehover.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Public/Css/recetas.css">
+    <link rel="stylesheet" href="./Public/Css/modalRegistrarReceta.css">
+    <link rel="stylesheet" href="./Public/Css/modalVerReceta.css">
+</head>
+<body>
+
+  <header class="menuFijo">
+    <nav>          
+      <div class="navUsuario">
+        <img src="./Public/Img/programar.png" width="32" height="32" alt="">
+        <br>
+        <a class="fuenteAppNav" href="landingPageApp.html">NutriPlan</a>
+      </div>
+      <a href="logros.html">Logros</a>
+      <a href="pesos.html">Pesos</a>
+      <a href="planesAyuno.html">Planes</a>
+      <a href="actFisica.html">Act. Física</a>
+      <a href="enfermedades.html">Enfermedades</a>
+      <a href="recetas.html">Recetas</a>
+    </nav>
+      <div class="navUsuario">
+        <img src="./Public/Img/usuario2.png" width="25" height="25" alt="">
+        <br>
+      <a href="perfil.html" id="perfil">Perfil</a>
+      </div>  
+  </header>
+      </div>
+      <div class="bannerActFisica">
+        <h1 class="tituloActFisica wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">Recetas</h1>
+      </div>         
+
+      <main>       
+        
+        <h1 class="tituloPrincipal">Registro de Recetas</h1>
+        <section class="sctRegistroPesos">
+            <div>
+                <p>
+                    Mantener un peso saludable es muy importante. Si usted está demasiado delgado o tiene sobrepeso u obesidad, puede tener más riesgos de sufrir ciertos problemas de salud por lo que le recomendamos tener un control de los mismos.
+                </p>
+                <button type="button" class="btnRegistrarReceta wow pulse" id="btnRegistrarReceta" data-wow-iteration="infinite">Registrar</button>
+            </div>
+            <div>
+              <img src="./Public/Img/recetas.jpg" alt="">
+            </div>
+            
+        </section>
+        
+
+        <section id="sctBeneficios">
+           
+                                
+            <div class="contenedorBeneficios">
+              <div class="beneficio">
+                <figure class="imghvr-zoom-in">
+                    <img src="./Public/Img/goya-shrimp-paella.jpg" alt="">
+                    <figcaption>
+                      <p>
+                        Arroz con Mariscos 
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <button id="btnVerReceta1" type="button" class="btnVerReceta">Ver Receta</button>
+              </div>
+  
+              <div class="beneficio">
+                <figure class="imghvr-zoom-in">
+                    <img src="./Public/Img/1366_2000.jpg" alt="">
+                    <figcaption>
+                      <p>
+                        Pancakes de Avena 
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <button id="btnVerReceta2" type="button" class="btnVerReceta">Ver Receta</button>
+              </div>
+              <div class="beneficio">
+                <figure class="imghvr-zoom-in">
+                    <img src="./Public/Img/topping-crepes.jpg" alt="">
+                    <figcaption>
+                      <p>
+                        Crepas Rellenas 
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <button  id="btnVerReceta3" type="button" class="btnVerReceta">Ver Receta</button>
+              </div>
+            </div>
+  
+            <div class="contenedorBeneficios">
+                <div class="beneficio">
+                    <figure class="imghvr-zoom-in">
+                        <img src="./Public/Img/6594a07290c4cc5ed88f682560cc2e49.jpg" alt="">
+                        <figcaption>
+                          <p>
+                            Lasaña de Pollo  
+                          </p>
+                        </figcaption>
+                      </figure>
+                      <button id="btnVerReceta4" type="button" class="btnVerReceta">Ver Receta</button>
+                </div>
+                <div class="beneficio">
+                    <figure class="imghvr-zoom-in">
+                        <img src="./Public/Img/233149.jpg" alt="">
+                        <figcaption>
+                          <p>
+                            Sopa de Pollo con Verduras
+                          </p>
+                        </figcaption>
+                      </figure>
+                      <button id="btnVerReceta5" type="button" class="btnVerReceta">Ver Receta</button>
+                </div>
+                <div class="beneficio">
+                    <figure class="imghvr-zoom-in">
+                        <img src="./Public/Img/tacos-pollo-tomate-maiz.jpg" alt="">
+                        <figcaption>
+                          <p>
+                            Taquitos de Pollo 
+                          </p>
+                        </figcaption>
+                      </figure>
+                      <button id="btnVerReceta6" type="button" class="btnVerReceta">Ver Receta</button>
+                </div>
+              </div>
+          </section>
+          
+          <section>
+            <!-- Ventanas modals -->
+
+            <!-- Modal Registrar Receta -->
+            <div id="modalRegistrarReceta" class="modal">
+              <div class="modalContenido">
+                  <div class="modalHeader">
+                      <span class="cerrar" id="spanCerrarRegistrarReceta">&times;</span>
+                      <h1 class="tituloModal">Registro de Receta</h1>
+                  </div>
+                  <div class="modalBody">
+                      <div class="modalBody1">
+                          <div class="modalBodyInputs">
+                              <label for="txtNombreReceta" id="lblNombreReceta">Nombre</label>
+                              <input type="text" id="txtNombreReceta">
+                              <label for="txtTipoReceta" id="lblTipoReceta">Tipo</label>
+                              <select name="TipoReceta" id="txtTipoReceta">
+                                  <option value="">- Seleccione -</option>
+                                  <option value="desayuno">Desayuno</option>
+                                  <option value="almuerzo">Almuerzo</option>
+                                  <option value="cena">Cena</option>
+                                  <option value="postre">Postre</option>
+                                  <option value="merienda">Merienda</option>
+                              </select>
+                              <label for="txtCategoriaReceta" id="lblCategoriaReceta">Categoría</label>
+                              <select name="CategoriaReceta" id="txtCategoriaReceta">
+                                <option value="">- Seleccione -</option>
+                                <option value="vegetariana">Vegetariana</option>
+                                <option value="glutenfree">Gluten-Free</option>
+                                <option value="tradicional">Tradicional</option>
+                                <option value="vegana">Vegana</option>
+                              </select>
+                          </div>
+                          <div class="modalBodyImg">
+                            <img src="./Public/Img/Pollo.png" alt="Imagen de receta">
+                            <label for="imgReceta">Agregue imagen de la receta:</label>
+                            <input type="file" id="imgReceta">
+                          </div>
+                      </div>
+                      <div class="modalBody2">
+                          <div class="modalBodyIngredientes">
+                            <label for="txtIngredientes" id="lblIngredientes">Ingredientes</label>
+                            <!-- <textarea name="" id="txtIngredientes" cols="30" rows="7" placeholder=""></textarea> -->
+                              <fieldset>            
+                                  <label for="chkArroz">Arroz</label>
+                                  <input type="checkbox" id="chkArroz" value="">
+
+                                  <label for="chkPollo">Pollo</label>
+                                  <input type="checkbox" id="chkJuegos" value="">
+                                  
+                                  <label for="chkFrijoles">Frijoles</label>
+                                  <input type="checkbox" id="chkFrijoles" value="">
+
+                                  <label for="chkArroz">Arroz</label>
+                                  <input type="checkbox" id="chkArroz" value="">
+                                  <label for="chkArroz">Arroz</label>
+                                  <input type="checkbox" id="chkArroz" value="">
+                                  <label for="chkArroz">Arroz</label>
+                                  <input type="checkbox" id="chkArroz" value="">
+                                  <label for="chkArroz">Arroz</label>
+                                  <input type="checkbox" id="chkArroz" value="">
+                                  <label for="chkArroz">Arroz</label>
+                                  <input type="checkbox" id="chkArroz" value="">
+                                  <label for="chkArroz">Arroz</label>
+                                  <input type="checkbox" id="chkArroz" value="">
+                                  
+
+
+                              </fieldset>
+                          </div>
+                          <div class="modalBodyProcedimientos">
+                            <label for="txtProcedimiento" id="lblProcedimiento">Procedimiento</label>
+                            <textarea name="" id="txtProcedimiento" cols="30" rows="7" placeholder=""></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modalFooter">
+                      <button type="button" class= "btnModal" id="btnAgregarReceta">Guardar</button>
+                  </div>
+              </div>
+            </div>
+
+
+            <!-- Modal Ver Receta 1 -->
+            <div id="modalVerReceta1" class="modal">
+              <div class="modalContenido">
+                  <div class="modalHeader">
+                      <span class="cerrar" id="spanCerrarVerReceta1">&times;</span>
+                      <h1>Arroz con Mariscos</h1>
+                  </div>
+                  <div class="modalBody">
+
+                      <div class="modalBody1">
+
+                          <div class="modalBodyInputs">
+                              <h2>Tipo</h2>
+                              <p>Almuerzo</p>
+                              <h2>Categoría</h2>
+                              <p>Tradicional</p>                
+                          </div>
+                          <div class="modalBodyImg">
+                            <img src="./Public/Img/goya-shrimp-paella.jpg" alt="Imagen de receta">          
+                          </div>
+                      </div>
+
+                      <div class="modalBody2">
+                          <div class="modalBodyIngredientes">
+                            <h2>Ingredientes</h2>
+                            <ul>
+                              <li>2 ½ tazas de mariscos</li>
+                              <li>Sal</li>
+                              <li>Pimienta</li>
+                              <li>Aceite de oliva</li>
+                              <li>Ajo</li>
+                              <li>Ají rojo</li>
+                              <li>Perejil</li>
+                              <li>Culantro</li>
+                              <li>1 ½ taza  arroz</li>
+                              <li>3 tazas de agua</li>
+                            </ul>
+                          </div>
+                          <div class="modalBodyProcedimientos">
+                            <h2>Procedimiento</h2>
+                            <ol>
+                              <li>Combinar los mariscos con sal, pimienta.</li>
+                              <li>Sofreír el ajo y el ají rojo.</li>
+                              <li>Agregar los mariscos, el perejil, el culantro y cocinar por 5 minutos.</li>
+                              <li>Añadir el arroz, el agua, revolver, tapar y cocinar a fuego medio.</li>
+                              <li>Bajar el fuego, destapar y cocinar hasta que el arroz esté seco.</li>
+                              <li>Servir y disfrutar.</li>
+                            </ol>
+                      </div>
+                  </div>
+                  <div class="modalFooter">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Ver Receta 2 -->
+            <div id="modalVerReceta2" class="modal">
+              <div class="modalContenido">
+                  <div class="modalHeader">
+                      <span class="cerrar" id="spanCerrarVerReceta2">&times;</span>
+                      <h1>Pancakes de Avena</h1>
+                  </div>
+                  <div class="modalBody">
+
+                      <div class="modalBody1">
+
+                          <div class="modalBodyInputs">
+                              <h2>Tipo</h2>
+                              <p>Desayuno</p>
+                              <h2>Categoría</h2>
+                              <p>Vegana</p>                
+                          </div>
+                          <div class="modalBodyImg">
+                            <img src="./Public/Img/1366_2000.jpg" alt="Imagen de receta">          
+                          </div>
+                      </div>
+
+                      <div class="modalBody2">
+                          <div class="modalBodyIngredientes">
+                            <h2>Ingredientes</h2>
+                            <ul>
+                              <li>¼ taza de harina de trigo</li>
+                              <li>¼ taza de agua</li>
+                              <li>2 bananas</li>
+                              <li>2 huevos</li>
+                              <li>2 cucharadas de azúcar morena</li>
+                              <li>1 cucharada de canela</li>
+                              <li>1 cucharita de mantequilla</li>
+                            </ul>
+                          </div>
+                          <div class="modalBodyProcedimientos">
+                            <h2>Procedimiento</h2>
+                            <ol>
+                              <li>En un tazón, combinar todos los ingredientes excepto la mantequilla.</li>
+                              <li>En un sartén a fuego medio, colocar la mantequilla y esperar a que se derrita.</li>
+                              <li>Verter ¼ taza de la mezcla sobre el sartén y cocinar hasta que comience a burbujear. Dar vuelta, y cocinar por 1 minuto o hasta que se dore del otro lado.</li>
+                              <li>Servir y disfrutar.</li>
+                            </ol>
+                      </div>
+                  </div>
+                  <div class="modalFooter">
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Ver Receta 3 -->
+          <div id="modalVerReceta3" class="modal">
+            <div class="modalContenido">
+                <div class="modalHeader">
+                    <span class="cerrar" id="spanCerrarVerReceta3">&times;</span>
+                    <h1>Crepas Rellenas </h1>
+                </div>
+                <div class="modalBody">
+
+                    <div class="modalBody1">
+
+                        <div class="modalBodyInputs">
+                            <h2>Tipo</h2>
+                            <p>Postre</p>
+                            <h2>Categoría</h2>
+                            <p>Tradicional</p>                
+                        </div>
+                        <div class="modalBodyImg">
+                          <img src="./Public/Img/topping-crepes.jpg" alt="Imagen de receta">          
+                        </div>
+                    </div>
+
+                    <div class="modalBody2">
+                        <div class="modalBodyIngredientes">
+                          <h2>Ingredientes</h2>
+                          <ul>
+                            <li>½ taza de harina</li>
+                            <li>½ taza de avena</li>
+                            <li>¼ taza de agua</li>
+                            <li>1 cucharada de mantequilla derretida</li>
+                            <li>1 banana maduro cortado en rodajas</li>
+                            <li> cucharadas de mermelada de fresa</li>
+                          </ul>
+                        </div>
+                        <div class="modalBodyProcedimientos">
+                          <h2>Procedimiento</h2>
+                          <ol>
+                            <li>En un tazón, combinar la leche, la harina, el agua y la mantequilla.</li>
+                            <li>Dejar reposar por 5 minutos.</li>
+                            <li>En un sartén de a fuego medio, colocar un poco de aceite en aerosol y verter 1/3 taza de la mezcla elaborada. </li>
+                            <li>Colocar una crepa sobre una superficie plana y rellenar con las frutas que más te gusten.</li>
+                            <li>Servir y disfrutar.</li>
+                          </ol>
+                        </div>
+                    </div>
+                    <div class="modalFooter">
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <!-- Modal Ver Receta 4 -->
+    <div id="modalVerReceta4" class="modal">
+      <div class="modalContenido">
+        <div class="modalHeader">
+          <span class="cerrar" id="spanCerrarVerReceta4">&times;</span>
+          <h1>Lasaña de Pollo</h1>
+        </div>
+        <div class="modalBody">
+          <div class="modalBody1">
+            <div class="modalBodyInputs">
+              <h2>Tipo</h2>
+              <p>Cena</p>
+              <h2>Categoría</h2>
+              <p>Tradicional</p>
+            </div>
+            <div class="modalBodyImg">
+              <img src="./Public/Img/6594a07290c4cc5ed88f682560cc2e49.jpg" alt="Imagen de Crepas Rellenas">
+            </div>
+          </div>
+          <div class="modalBody2">
+            <div class="modalBodyIngredientes">
+              <h2>Ingredientes</h2>
+              <ul>
+                <li>2 cucharadas de mantequilla</li>
+                <li>½ taza de harina de trigo</li>
+                <li>2 tazas de agua</li>
+                <li>2 Cubitos de Pollo</li>
+                <li>10 hojas de pasta para lasaña</li>
+                <li>5 tazas de pollo cocido y deshilachado</li>
+                <li>3 tazas Queso Mozzarella</li>
+              </ul>
+            </div>
+            <div class="modalBodyProcedimientos">
+              <h2>Procedimiento</h2>
+              <ol>
+                <li>En una cacerola a fuego medio, derretir la mantequilla, agregar la harina y cocinar por 5 minutos.</li>
+                <li>Agregar la leche evaporada, la crema de leche, el agua, los cubitos de pollo y cocinar por 10 minutos.</li>
+                <li>Precalentar el horno a 200° C.</li>
+                <li>En un molde cuadrado, colocar una capa de salsa blanca, una capa de pasta, una capa de salsa, una capa de pollo y una capa de Queso.</li>
+                <li>Servir y disfrutar.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="modalFooter">
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Modal Ver Receta 5 -->
+        <div id="modalVerReceta5" class="modal">
+          <div class="modalContenido">
+            <div class="modalHeader">
+              <span class="cerrar" id="spanCerrarVerReceta5">&times;</span>
+              <h1>Sopa de Pollo con Verduras</h1>
+            </div>
+            <div class="modalBody">
+              <div class="modalBody1">
+                <div class="modalBodyInputs">
+                  <h2>Tipo</h2>
+                  <p>Almuerzo</p>
+                  <h2>Categoría</h2>
+                  <p>Tradicional</p>
+                </div>
+                <div class="modalBodyImg">
+                  <img src="./Public/Img/233149.jpg" alt="Imagen de Pancakes de Avena">
+                </div>
+              </div>
+              <div class="modalBody2">
+                <div class="modalBodyIngredientes">
+                  <h2>Ingredientes</h2>
+                  <ul>
+                    <li>1 libra de pollo cortado en piezas</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>1 cucharada de aceite vegetal</li>
+                    <li>4 dientes de ajo cortados finamente</li>
+                    <li>½ taza de cebolla </li>
+                    <li>1 mazorca entera cortada </li>
+                    <li>2 ½ litros de agua</li>
+                    <li>1 zanahoria grande cortada </li>
+                    <li>1 sobre de Sopa de Pollo con Fideos </li>
+                    <li>1 cucharada de culantro </li>
+                  </ul>
+                </div>
+                <div class="modalBodyProcedimientos">
+                  <h2>Procedimiento</h2>
+                  <ol>
+                    <li>En un tazón combinar el pollo con sal y pimienta al gusto y dejar marinar por 5 minutos.</li>
+                    <li>Agregar el agua, tapar y cocinar hasta hierva.</li>
+                    <li>Añadir la zanahoria, la papa, la yuca y cocinar por hasta que las verduras estén blandas.</li>
+                    <li>Agregar el sobre de sopa de pollo con fideos y a fuego bajo por 5 minutos.</li>
+                    <li>Servir y disfrutar.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="modalFooter">
+              </div>
+            </div>
+          </div>
+        </div>
+
+            <!-- Modal Ver Receta 6 -->
+            <div id="modalVerReceta6" class="modal">
+              <div class="modalContenido">
+                <div class="modalHeader">
+                  <span class="cerrar" id="spanCerrarVerReceta6">&times;</span>
+                  <h1>Taquitos de Pollo</h1>
+                </div>
+                <div class="modalBody">
+                  <div class="modalBody1">
+                    <div class="modalBodyInputs">
+                      <h2>Tipo</h2>
+                      <p>Cena</p>
+                      <h2>Categoría</h2>
+                      <p>Tradicional</p>
+                    </div>
+                    <div class="modalBodyImg">
+                      <img src="./Public/Img/tacos-pollo-tomate-maiz.jpg" alt="Imagen de Arroz con Mariscos">
+                    </div>
+                  </div>
+                  <div class="modalBody2">
+                    <div class="modalBodyIngredientes">
+                      <h2>Ingredientes</h2>
+                      <ul>
+                        <li>1 Libra de pechuga de pollo</li>
+                        <li>Pimienta al gusto</li>
+                        <li>1 cucharadita de aceite vegetal</li>
+                        <li>1 taza de pimentón cortado en tiras</li>
+                        <li>1/2 taza de Ketchup </li>
+                        <li>Cilantro al gusto cortado finamente</li>
+                        <li>10 Tortillas de trigo integral</li>
+                      </ul>
+                    </div>
+                    <div class="modalBodyProcedimientos">
+                      <h2>Procedimiento</h2>
+                      <ul>
+                        <li>En un tazón, combinar el pollo con la sal y pimienta al gusto.</li>
+                        <li>En un sartén a fuego medio, calentar el aceite y sofreír el pollo durante 5 minutos.</li>
+                        <li>Bajar el fuego, añadir el ketchup y el cilantro y cocinar por 2 minutos.</li>
+                        <li>En un sartén a fuego medio, calentar las tortillas de harina por ambos lados.</li>
+                        <li>Rellenar las tortillas con el pollo, envolver y disfrutar.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modalFooter">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+          </section>
+
+
+
+
+            
+      </main>
+
+      <footer class="contenedorFooter">
+
+        <div class="footer1">
+            <div class="queruTech">
+                <h3 class="fuenteAppNav">NutriPlan</h3>
+                <p>El ayuno intermitente es actualmente una de las tendencias <br> para tener buena forma y salud más populares del mundo. <br> Las personas suelen ponerlo en práctica para perder peso, <br> mejorar su salud y simplificar sus estilos de vida.</p>
+                <div class="iconos">
+                    <img  src="./Public/Img/facebook.png" width="35px" height="35px" alt="">
+                    <img  src="./Public/Img/instagram.png" width="35px" height="35px" alt="">
+                </div>              
+            </div>
+            <div class="explorar">
+                <h4>Explorar</h4>
+                <a href="landingPageApp.html">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="logros.html">Logros</a>
+                <a href="pesos.html">Pesos</a>
+                <a href="planesAyuno.html">Planes</a>
+                <a href="actFisica.html">Act. Física</a>
+                <a href="enfermedades.html">Enfermedades</a>
+                <a href="recetas.html">Recetas</a> 
+                <a href="landingPageGrupo.html">QueruTech</a>           
+    
+            </div>
+            <div class="visitenos">
+                <h4>Visítenos</h4>
+                <p>
+                  San José, Barrio Don Bosco, 200 metros sur de <br> Pizza Hut, Paseo Colón, San José.
+                </p>
+            </div>
+            <div class="contactenos">
+                <h4>Contáctenos</h4>
+                <div class="contactenos2">
+                    <div class="contacto">
+                        <img src="./Public/Img/llamada-telefonica.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4047</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/fax.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4174</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/correo-electronico.png" width="17px" height="17px" alt="">
+                        <p>nutriplan@gmail.com</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="footer2">
+          <p>©NutriPlan. Todos los derechos reservados, 2022.</p>
+          <a href="#">Política de Privacidad | </a>
+          <a href="#">Términos y Condiciones</a>                         
+        </div>           
+    </footer> 
+
+      
+      
+        
+
+    
+</body>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+      <!-- Libreria WOW.JS -->
+        <script src="./Public/Js/Controller/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
+        <script src="./Public/Js/Controller/modalRecetas.js"></script>
+</html>

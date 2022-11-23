@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="--UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Public/Img/programar.png">
+    <title>Logros</title>
+    <!-- Fuente p / a -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Fuente App -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Fuente Grupo -->
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/aja-/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./Public/Css/animate.css">
+    <link rel="stylesheet" href="./Public/Css/logros.css">
+    <link rel="stylesheet" href="./Public/Css/modalLogros.css">
+    
+    
+</head>
+<body>
+    
+    <header class="menuFijo">
+        <nav>          
+          <div class="navUsuario">
+            <img src="./Public/Img/programar.png" width="32" height="32" alt="">
+            <br>
+            <a class="fuenteAppNav" href="landingPageApp.html">NutriPlan</a>
+          </div>
+          <a href="logros.html">Logros</a>
+          <a href="pesos.html">Pesos</a>
+          <a href="planesAyuno.html">Planes</a>
+          <a href="actFisica.html">Act. Física</a>
+          <a href="enfermedades.html">Enfermedades</a>
+          <a href="recetas.html">Recetas</a>
+        </nav>
+          <div class="navUsuario">
+            <img src="./Public/Img/usuario2.png" width="25" height="25" alt="">
+            <br>
+          <a href="perfil.html" id="perfil">Perfil</a>
+          </div>  
+      </header>
+      <div class="bannerActFisica">
+        <h1 class="tituloActFisica wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">Logros</h1>
+      </div>  
+
+    <main>
+
+        <section id="sctMitos">
+    
+              <div class="contenedorMitos">
+    
+                <div class="mito">
+                  <img src="./Public/Img/ReduccionPeso.jpg" alt="">
+                  <h2>Reducción Peso</h2>
+                <button type="button" id="btnIngresarPeso">Ingresar</button>
+                </div>
+
+                <div class="mito">
+                  <img src="./Public/Img/IImc.jpg" alt="">
+                  <h2>IMC</h2>
+                <button type="button" id="btnIngresarIMC">Ingresar</button>
+                </div>
+    
+                
+    
+                <div class="mito">
+                  <img src="./Public/Img/Ayuno.jpg" alt="">
+                  <h2>Horas de Ayuno</h2>
+                <button type="button" id="btnIngresarHorasAyuno">Ingresar</button>
+                </div>
+              </div>
+    
+              <div class="contenedorMitos">
+    
+                  <div class="mito">
+                    <img src="./Public/Img/DiasAyuno.jpg" alt="">
+                    <h2>Días de Ayuno</h2>
+                <button type="button" id="btnIngresarDiasAyuno">Ingresar</button>
+                  </div>
+    
+                  <div class="mito">
+                    <img src="./Public/Img/OtrosLogros.jpg" alt="">
+                    <h2>Otros Logros</h2>
+                <button type="button" id="btnIngresarOtrosLogros">Ingresar</button>
+                  </div>
+              </div>              
+            
+          </section>
+
+
+        <section id="sctTabla">
+            <table id="tblLogros">
+                <tr>
+                    <th>Categoría</th>
+                    <th>Objetivo</th>
+                    <th>Estado</th>
+                    <th>Medallas</th>
+                    <th>Gráficos</th>
+                </tr>
+                <tr>
+                    <th rowspan="3">Reducción Peso</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td rowspan="3" class="btnTabla">
+                        <button type="button" id="btnReduccionPeso">Ver</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Reducción/Aumento IMC</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td rowspan="3" class="btnTabla">
+                        <button type="button" id="btnIMC">Ver</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Logros</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td rowspan="3" class="btnTabla">
+                        <button type="button" id="btnLogros">Ver</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Horas de ayuno</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td rowspan="3" class="btnTabla">
+                        <button type="button" id="btnHorasAyuno">Ver</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Días de ayuno</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td rowspan="3" class="btnTabla">
+                        <button type="button" id="btnDiasAyuno">Ver</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <!-- Ventanas modals -->
+        <!-- Modal Reducción Peso -->
+        <div id="modalReduccionPeso" class="modal">
+            <div class="modalContenido">
+                <div class="modalHeader">
+                    <span class="cerrar" id="spanReduccionPeso">&times;</span>
+                    <h1>Logro Nuevo | Reducción de Peso</h1>
+                </div>
+                <div class="modalBody">
+                    <p>Ingrese su nuevo objetivo</p>
+                    <input type="number" id="txtReduccionPeso">
+                </div>
+                <div class="modalFooter">
+                    <button type="button" class= "btnModal" id="btnAgregarPeso">Agregar logro</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal IMC -->
+        <div id="modalIMC" class="modal">
+            <div class="modalContenido">
+                <div class="modalHeader">
+                    <span class="cerrar" id="cerrarIMC">&times;</span>
+                    <h1>Logro Nuevo | IMC</h1>
+                </div>
+                <div class="modalBody">
+                    <p>Ingrese su objetivo nuevo</p>
+                    <input type="number" id="txtIMC">
+                </div>
+                <div class="modalFooter">
+                    <button type="button" class= "btnModal" id="btnAgregarIMC">Agregar logro</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Horas de Ayuno -->
+        <div id="modalHorasAyuno" class="modal">
+            <div class="modalContenido">
+                <div class="modalHeader">
+                    <span class="cerrar" id="cerrarHorasAyuno">&times;</span>
+                    <h1>Logro Nuevo | Horas de Ayuno</h1>
+                </div>
+                <div class="modalBody">
+                    <p>Ingrese su objetivo nuevo</p>
+                    <input type="number" id="txtHorasAyuno">
+                </div>
+                <div class="modalFooter">
+                    <button type="button" class= "btnModal" id="btnAgregarHorasAyuno">Agregar logro</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Días de Ayuno -->
+        <div id="modalDiasAyuno" class="modal">
+            <div class="modalContenido">
+                <div class="modalHeader">
+                    <span class="cerrar" id="cerrarDiasAyuno">&times;</span>
+                    <h1>Logro nuevo | Días de Ayuno</h1>
+                </div>
+                <div class="modalBody">
+                    <p>Ingrese su objetivo nuevo</p>
+                    <input type="number" id="txtDiasAyuno">
+                </div>
+                <div class="modalFooter">
+                    <button type="button" class= "btnModal" id="btnAgregarDiasAyuno">Agregar logro</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Otros Logros -->
+        <div id="modalOtrosLogros" class="modal">
+            <div class="modalContenido">
+                <div class="modalHeader">
+                    <span class="cerrar" id="cerrarOtrosLogros">&times;</span>
+                    <h1>Logro Nuevo</h1>
+                </div>
+                <div class="modalBody">
+                    <p>Ingrese su objetivo nuevo</p>
+                    <input type="text" id="txtOtrosLogros">
+                </div>
+                <div class="modalFooter">
+                    <button type="button" class= "btnModal" id="btnAgregarOtrosLogros">Agregar logro</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="contenedorFooter">
+
+        <div class="footer1">
+            <div class="queruTech">
+                <h3 class="fuenteAppNav">NutriPlan</h3>
+                <p>El ayuno intermitente es actualmente una de las tendencias <br> para tener buena forma y salud más populares del mundo. <br> Las personas suelen ponerlo en práctica para perder peso, <br> mejorar su salud y simplificar sus estilos de vida.</p>
+                <div class="iconos">
+                    <img  src="./Public/Img/facebook.png" width="35px" height="35px" alt="">
+                    <img  src="./Public/Img/instagram.png" width="35px" height="35px" alt="">
+                </div>              
+            </div>
+            <div class="explorar">
+                <h4>Explorar</h4>
+                <a href="landingPageApp.html">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="logros.html">Logros</a>
+                <a href="pesos.html">Pesos</a>
+                <a href="planesAyuno.html">Planes</a>
+                <a href="actFisica.html">Act. Física</a>
+                <a href="enfermedades.html">Enfermedades</a>
+                <a href="recetas.html">Recetas</a> 
+                <a href="landingPageGrupo.html">QueruTech</a>        
+    
+            </div>
+            <div class="visitenos">
+                <h4>Visítenos</h4>
+                <p>
+                  San José, Barrio Don Bosco, 200 metros sur de <br> Pizza Hut, Paseo Colón, San José.
+                </p>
+            </div>
+            <div class="contactenos">
+                <h4>Contáctenos</h4>
+                <div class="contactenos2">
+                    <div class="contacto">
+                        <img src="./Public/Img/llamada-telefonica.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4047</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/fax.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4174</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/correo-electronico.png" width="17px" height="17px" alt="">
+                        <p>nutriplan@gmail.com</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="footer2">
+          <p>©NutriPlan. Todos los derechos reservados, 2022.</p>
+          <a href="#">Política de Privacidad | </a>
+          <a href="#">Términos y Condiciones</a>                         
+        </div>           
+    </footer> 
+
+    
+</body>
+
+    <!-- Libreria WOW.JS -->
+        <script src="./Public/Js/Controller/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="./Public/Js/Controller/logros.js"></script>
+        <script src="./Public/Js/Service/logrosService.js"></script>
+</html>

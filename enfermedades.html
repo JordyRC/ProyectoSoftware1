@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Public/Img/programar.png">
+    <title>Enfermedades</title>
+    <!-- Fuente p / a -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Fuente App -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Fuente Grupo -->
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+    <!-- Libreria Animación Animate.css -->
+    <link rel="stylesheet" href="./Public/Css/animate.css">
+    <link rel="stylesheet" href="./Public/Css/enfermedades.css">
+</head>
+<body>
+
+    <header class="menuFijo">
+        <nav>          
+          <div class="navUsuario">
+            <img src="./Public/Img/programar.png" width="32" height="32" alt="">
+            <br>
+            <a class="fuenteAppNav" href="landingPageApp.html">NutriPlan</a>
+          </div>
+          <a href="logros.html">Logros</a>
+          <a href="pesos.html">Pesos</a>
+          <a href="planesAyuno.html">Planes</a>
+          <a href="actFisica.html">Act. Física</a>
+          <a href="enfermedades.html">Enfermedades</a>
+          <a href="recetas.html">Recetas</a>
+        </nav>
+          <div class="navUsuario">
+            <img src="./Public/Img/usuario2.png" width="25" height="25" alt="">
+            <br>
+          <a href="perfil.html" id="perfil">Perfil</a>
+          </div>  
+      </header>
+      <div class="bannerActFisica">
+        <h1 class="tituloActFisica wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">Enfermedades</h1>
+      </div>         
+
+      <main>
+        <h1>Registro de Enfermedades</h1>
+        <section class="sctRegistroEnfermedad">
+            <div>
+                <p>
+                    El tener un registro de sus enfermedades radica en mantener una salud óptima en las personas para atender a tiempo o prevenir enfermedades y padecimientos que a la larga afectan la salud, economía y bienestar general de las personas. 
+                </p>
+                
+                <button id="botonRegistrarUsuario" type="button" class="boton wow pulse"  data-wow-iteration="infinite">Registrar</button>
+            </div>
+            <div>
+                <img src="./Public/Img/medicina.jpg" alt="">
+            </div>
+            
+        </section>
+
+        <section id ="sctFormEnfermedad">
+
+            <div id="containerModalRegistroEnfermedades" class="containerModalRegistroEnfermedades">
+
+
+                <div class="modalForm">
+                    
+                    <div class="headerform"> 
+                        <span class="cerrar" id="spanRegistroEnfermedades">&times;</span> 
+                        <h2>Registro de Enfermedades</h2>
+                    </div> 
+                    
+                    <div class="formRegistroPesos">
+                           
+                        <form action="" id="formEnfermedades">                                
+                        
+                            <div>
+                                <label for="txtNombreEnferm">Nombre</label>
+                                <input type="text" id="txtNombreEnferm" name="txtNombreEnferm" required>
+                            </div>
+
+                            <div>
+                                <label for="txtDescripcionEnferm">Descripción</label>
+                                <textarea id="txtDescripcionEnferm" name="txtDescripcionEnferm" cols="30" rows="3"></textarea required>
+                            </div>
+
+                            <div>
+                                <label for="sleEstadoEnferm">Estado</label>
+                                <select name="sleEstadoEnferm" id="sleEstadoEnferm" required>
+                                    <option value="">--Seleccione--</option>
+                                    <option value="Aguda">Aguda</option>
+                                    <option value="Crónica">Crónica</option>
+                                    <option value="Esporádica">Esporádica</option>
+                                    <option value="Inactiva">Inactiva</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="txtMedicamento">Medicamento (opcional)</label>
+                                <textarea id="txtMedicamento" name ="txtMedicamento" cols="30" rows="3" required></textarea required>
+                            </div>                         
+                        
+
+                        <button class="tipoBoton" id="registrarEnfermedades">Registrar</button>
+                
+                        </form>
+            
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        
+
+        
+
+        <section class="sctTablaEnferm">
+            <div>
+                <table id="tablaEnfermedades">
+                    <thead id="thEnfermedades">
+                        <tr>
+                            <th>Enfermedad</th>
+                            <th>Descripción</th>
+                            <th>Estado</th> 
+                            <th>Medicamento</th>                            
+                        </tr>
+                    </thead>
+                </table>
+            </div>                      
+        </section>                  
+      </main>
+
+      <footer class="contenedorFooter">
+
+        <div class="footer1">
+            <div class="queruTech">
+                <h3 class="fuenteAppNav">NutriPlan</h3>
+                <p>El ayuno intermitente es actualmente una de las tendencias <br> para tener buena forma y salud más populares del mundo. <br> Las personas suelen ponerlo en práctica para perder peso, <br> mejorar su salud y simplificar sus estilos de vida.</p>
+                <div class="iconos">
+                    <img  src="./Public/Img/facebook.png" width="35px" height="35px" alt="">
+                    <img  src="./Public/Img/instagram.png" width="35px" height="35px" alt="">
+                </div>              
+            </div>
+            <div class="explorar">
+                <h4>Explorar</h4>
+                <a href="landingPageApp.html">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="logros.html">Logros</a>
+                <a href="pesos.html">Pesos</a>
+                <a href="planesAyuno.html">Planes</a>
+                <a href="actFisica.html">Act. Física</a>
+                <a href="enfermedades.html">Enfermedades</a>
+                <a href="recetas.html">Recetas</a> 
+                <a href="landingPageGrupo.html">QueruTech</a>           
+    
+            </div>
+            <div class="visitenos">
+                <h4>Visítenos</h4>
+                <p>
+                  San José, Barrio Don Bosco, 200 metros sur de <br> Pizza Hut, Paseo Colón, San José.
+                </p>
+            </div>
+            <div class="contactenos">
+                <h4>Contáctenos</h4>
+                <div class="contactenos2">
+                    <div class="contacto">
+                        <img src="./Public/Img/llamada-telefonica.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4047</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/fax.png" width="17px" height="17px" alt="">
+                        <p>+506 2552-4174</p>
+                    </div>
+                    <div class="contacto">
+                        <img src="./Public/Img/correo-electronico.png" width="17px" height="17px" alt="">
+                        <p>nutriplan@gmail.com</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="footer2">
+          <p>©NutriPlan. Todos los derechos reservados, 2022.</p>
+          <a href="#">Política de Privacidad | </a>
+          <a href="#">Términos y Condiciones</a>                         
+        </div>           
+    </footer> 
+
+
+        
+
+    
+</body>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./Public/Js/Controller/enfermedades.js"></script>
+      <!-- Libreria WOW.JS -->
+        <script src="./Public/Js/Controller/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Public/Img/programar.png">
+    <title>Landing Page App</title>
+    <!-- Fuente p / a -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Fuente App -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Fuente Grupo -->
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+    <!-- Libreria Animación Animate.css -->
+    <link rel="stylesheet" href="./Public/Css/animate.css">
+    <!-- Libreria Transiciones o Cortinas -->
+    <link href="./Public/Css/imagehover.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./Css/modal.css"> -->
+    <link rel="stylesheet" href="./Public/Css/landingPageApp.css">
+    <!-- <link rel="stylesheet" href="./Css/general.css"> -->
+    <link rel="stylesheet" href="./Public/Css/modalLandingApp.css">
+    
+</head>
+    <header id="sctHeader" class="menuFijo">
+      <nav>
+        <div class="navUsuario">
+          <img src="./Public/Img/programar.png" width="32" height="32" alt="">
+          <br>
+          <a class="fuenteAppNav" data-scroll href="#sctHeader">NutriPlan</a>
+        </div>   
+        <a data-scroll href="#sctBeneficios">Beneficios</a>
+        <a data-scroll href="#sctExpertos">Expertos</a>
+        <a data-scroll href="#sctplanesAyuno">Planes</a>
+        <a data-scroll href="#sctMitos">Consejos</a>
+        <a data-scroll href="#sctConsejos">Mitos</a> 
+         
+      </nav>
+        <div class="navUsuario">
+          <img src="./Public/Img/usuario2.png" width="25" height="25" alt="">
+          <br>
+        <a href="perfil.html" id="perfil">Perfil</a>
+        </div>  
+    </header>
+<body>
+
+    <main>
+
+      <!-- Seccion1 Banner  -->
+        <section id="sctBanner">
+            <div class="infoBanner wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
+                <h1 class="fuenteApp">NutriPlan</h1>
+                <p>Comience ahora su plan de ayuno y conozca los beneficios de hacerlo</p>
+                
+                <button id="botonRegistrarUsuario" type="button" class="boton wow pulse" data-wow-delay="2s" data-wow-iteration="infinite">Registrarse</button>
+            </div>                       
+        </section>
+
+        <!-- Modal Reducción Peso -->
+        <section>
+          <div id="modalLandingApp" class="modal">
+            <div class="modalContenido">
+                
+                <div class="modalHeader">
+                    <span class="cerrar" id="spanCerrarLandingApp">&times;</span>
+                    <h1>Registro de Usuario</h1>
+                </div>
+                <div class="modalBody">
+
+                      <div class="modalBody1">
+                          <div>
+                            <label for="txtNombreUsuario">Nombre Completo</label>
+                            <input type="text" id="txtNombreUsuario" placeholder="Escriba su nombre completo" required>
+                          </div>
+
+                          <div>
+                            <label for="txtCorreoUsuario">Correo Electrónico</label>
+                            <input type="email" id="txtCorreoUsuario" placeholder="Escriba su correo electrónico" required>
+                          </div>
+                        
+                          <div>
+                            <label for="txtNacimientoUsuario" id="lblnacimiento">Fecha Nacimiento</label required>
+                            <input type="date" id="txtNacimientoUsuario">
+                          </div>
+
+                          <div>
+                            <label for="txtEstaturaUsuario">Estatura (m)</label>
+                            <input type="number" min="0" max="120" id="txtEstaturaUsuario" placeholder="Escriba su estatura" required>
+                          </div>
+                      </div>
+
+                      <div>
+                          <fieldset required>
+                            <legend>Sexo</legend>
+      
+                              <label for="rbtFemeninoUsuario">Femenino</label>
+                              <input type="radio" name="rbtSexo" id="rbtFemeninoUsuario">
+                  
+                              <label for="rbtMasculinoUsuario">Masculino</label>
+                              <input type="radio" name="rbtSexo" id="rbtMasculinoUsuario">
+      
+                              <label for="rbtOtroUsuario">Otro</label>
+                              <input type="radio" name="rbtSexo" id="rbtOtroUsuario">      
+                          </fieldset>
+      
+                          <div  class="modalBody2">
+                            <label for="txtPesoIdoneoUsuario">Peso idóneo (Kg)</label>
+                            <input type="number" min="0" max="120" id="txtPesoIdoneoUsuario" placeholder="Escriba su peso idóneo" required>
+                          </div>
+      
+                          <div>
+                            <label for="slePlanAyuno">Plan de Ayuno</label>
+                            <select name="" id="slePlanAyuno" required>
+                                <option value="">--Seleccione el Plan--</option>
+                                <option value="1">16-8</option>
+                                <option value="2">14-10</option>
+                                <option value="3">18-6</option>
+                                <option value="4">20-4</option>
+                            </select>
+                          </div>
+      
+                          <div>
+                            <label for="txtFechaInicioRegistro">Fecha de Inicio</label>
+                            <input type="date" id="txtFechaInicioRegistro" required>
+                        </div>
+    
+                      </div>           
+
+                </div>
+                <div>
+                    <img src="./Public/Img/AgregarFoto.png" alt="">
+                </div>
+                <div class="modalFooter">
+                    <button type="button"  class= "btnModal" id="btnAgregarPeso">Registrar</button>
+                </div>
+            </div>
+          </div>
+        </section> 
+        
+
+      
+      
+
+
+      <!-- Seccion2 Pregunta1 -->
+        <section id="sctPregunta">
+            <h2 class="tituloPregunta1 bg-light">¿Qué es el ayuno intermitente?</h2>
+            <p>
+              Ayunamos cada día, desde que nos vamos a la cama hasta que tomamos el "des-ayuno" que, como ya dice el nombre, no es otra cosa que romper el ayuno. La dieta del ayuno intermitente se basa en alargar ese ayuno durante un determinado período de horas o días ya que hacerlo puede tener beneficios para la salud y para bajar de peso.
+            </p>
+        </section>
+
+      <!-- Seccion3 Beneficios-->
+        <section id="sctBeneficios">
+          <h2>Beneficios</h2>
+          <div class="contenedorBeneficios">
+
+            <div class="beneficio">
+              <img src="./Public/Img/presion1.png" alt="">
+              <p>
+                Ayuda a mejorar 
+                <br>
+                la presión sanguínea
+              </p>
+            </div>
+
+            <div class="beneficio">
+              <img src="./Public/Img/bajarPeso.jpg" alt="">
+              <p>
+                Ayuda a reducir 
+                <br>
+                la grasa del cuerpo
+              </p>
+            </div>
+            <div class="beneficio">
+              <img src="./Public/Img/corazon.jpg" alt="">
+              <p>
+                Evita la enfermedad
+                <br>
+                arterial coronaria
+                
+              </p>
+            </div>
+          </div>
+
+          <div class="contenedorBeneficios">
+              <div class="beneficio">
+                <img src="./Public/Img/insulina.jpg" alt="">
+                <p>
+                  Mejora la sensibilidad
+                  <br>
+                  hacia la insulina
+                </p>
+              </div>
+              <div class="beneficio">
+                <img src="./Public/Img/floraIntestinal.jpeg" alt="">
+                <p>
+                  Mejora la
+                  <br>
+                  flora intestinal
+                </p>
+              </div>
+              <div class="beneficio">
+                <img src="./Public/Img/celula3.jpg" alt="">
+                <p>
+                  Ayuda a combatir 
+                  <br>
+                  el estrés oxidativo 
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <!-- Seccion4 Expertos -->
+
+        <section id="sctExpertos">
+          <h2>Opiniones de Expertos</h2>
+          <div class="contenedorExpertos">
+
+            
+            <div class="experto">
+              <figure class="imghvr-push-up">
+                <img src="./Public/Img/doctor1.jpg" alt="">
+                <figcaption>
+                  <p>
+                    El ayuno intermitente contribuye a perder grasa corporal por una disminución de la ingesta de calorías, siempre y cuando haya un buen control sobre el apetito, de lo contrario, podemos conseguir el efecto rebote. 
+                  </p>
+                </figcaption>
+              </figure>
+              <h3>Dra. Dayana Calderón Mora</h3>
+              <p>Centro de Nutrición NutriSalud</p>
+            </div>
+
+            <div class="experto">
+              <figure class="imghvr-push-up">
+                <img src="./Public/Img/doctor3.jpg" alt="">
+                <figcaption>
+                  <p>
+                    Cada persona es libre de decidir cómo quiere alimentarse; como profesional de la nutrición debo aconsejar que, si se deciden por esta o por cualquier otra opción lo hagan bajo la supervisión de un profesional.
+                  </p>
+                </figcaption>
+              </figure>
+              <h3>Dr. Willie  Quesada Solano</h3>
+              <p>Centro de Nutrición Bionut</p>
+            </div>
+
+            <div class="experto">
+              <figure class="imghvr-push-up">
+                <img src="./Public/Img/doctor4.jpg" alt="">
+                <figcaption>
+                  <p>
+                    Los efectos positivos más evidentes es que reduce la resistencia a la insulina, aumenta el metabolismo a corto plazo, fortalece el sistema inmune y ayuda a diferenciar entre hambre real o fisiológica y hambre emocional. 
+                  </p>
+                </figcaption>
+              </figure>
+              <h3>Dra. Mónica Zuñiga García</h3>
+              <p>Centro de Nutrición Nutrife</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seccion5 Planes de Ayuno -->
+
+        <section id="sctplanesAyuno">
+          <h2>Planes de Ayuno</h2>
+          <div class="contenedorTextoPlanes">            
+            <p>
+            Un factor determinante del ayuno intermitente es el horario. Hay diferentes tipos de ayuno en función de las horas en las que se practique. Las fracciones horarias en las que podemos poner en práctica el ayuno son:
+          </p>
+          </div>
+          
+
+          <div class="contenedorPlanes">
+            <div>
+              <ul>
+                <li>✦ 16-8</li>
+                <p>
+                  Se trata de dieciséis horas de ayuno y 8 de alimentación. Es la más adecuada para los que inician en el ayuno intermitente.  
+                </p>
+                <li>✦ 14-10</li>
+                <p>
+                  Se trata de alimentarnos durante 10 horas y no hacerlo durante las 14 horas restantes del día.
+                </p>
+                <li>✦ 18-6</li>
+                <p>
+                  Se trata de un ayuno de 18 horas y luego una ventana nutricional de 6 horas.  
+                </p>
+                <li>✦ 20-4</li>
+                <p>
+                  Este tipo de ayuno los cálculos son muy sencillos, comemos una vez al día y no volvemos a comer hasta esa misma hora del día siguiente.  
+                </p>
+            </ul>
+            </div>
+
+            <div class="imgPlanes wow zoomIn" data-wow-delay="0.6s" data-wow-duration="3s">
+              <img src="./Public/Img/frutas.jpg" alt="">        
+            </div>                       
+          </div>
+          <div class="contenedorMarquee">
+            <h1 id="marqueAnuncio" class="">
+              <marquee behavior="" scrollamount="12">Importante: Recuerde antes de cambiar sus hábitos alimenticios consultar primero con un especialista.</marquee>
+            </h1>
+          </div>   
+          <!-- <div class="botonPlanes">
+            <button type="button" class="boton   wow pulse" data-wow-iteration="infinite">Registrarse</button> 
+          </div> -->                
+      </section>
+      
+      
+
+      <!-- Seccion6 Mitos  -->
+      <section id="sctMitos">
+        <h2 class="tituloPregunta1 margin">Consejos a seguir</h2>
+
+          <div class="contenedorMitos">
+
+            <div class="mito">
+              <img src="./Public/Img/reloj.jpg" alt="">
+              <p>
+                Comienza poco a poco extendiendo las horas de ayuno
+              </p>
+            </div>
+            <div class="mito">
+              <img src="./Public/Img/planifica.jpeg" alt="">
+              <p>
+                Planifica tus horarios de ayuno e ingesta de alimentos
+              </p>
+            </div>
+
+            
+
+            <div class="mito">
+              <img src="./Public/Img/comida.jpg" alt="">
+              <p>
+                Cuida la calidad de lo que comes siempre
+              </p>
+            </div>
+          </div>
+
+          <div class="contenedorMitos">
+
+              <div class="mito">
+                <img src="./Public/Img/agua1.jpg" alt="">
+                <p>
+                  Bebe suficientes líquidos sin calorias
+                </p>
+              </div>
+
+              <div class="mito">
+                <img src="./Public/Img/peso.jpg" alt="">
+                <p>
+                  Establece objetivos realistas y alcanzables
+                </p>
+              </div>
+          </div>
+          
+        
+      </section>
+
+      <section id="sctConsejos">
+        <h2>Mitos del ayuno intermitente</h2>
+        <div class="contenedorConsejos">
+  
+          <div class="consejo consejoMovil  wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
+            <div>
+              <h3>Si haces ayuno intermitente perderás masa muscular</h3>
+              <hr>
+              <p>
+                Falso. "Todo dependerá del tipo de nutrientes que se ingieran durante el período de alimentación. El ayuno intermitente acelera el metabolismo, el cuerpo quema grasa más rápidamente y asimila mejor los nutrientes; por eso, es muy importante que estos sean los adecuados".
+              </p>
+            </div>
+
+            <div class="imgPlanes">
+              <img src="./Public/Img/mito2.jpg" alt="">              
+              
+            </div>            
+          </div> 
+            
+  
+          <div class="consejo">
+            <div class="imgPlanes">
+              <img src="./Public/Img/mito3.jpg" alt="">      
+            </div> 
+            
+            <div>
+              <h3>Con este ayuno bajan los niveles de azúcar</h3>
+              <hr>
+              <p>
+                Falso. "Contribuye a que no se eleve, pero no los baja. El cuerpo humano está preparado para mantener estables los niveles de glucosa, por eso no es necesario comer constantemente".
+              </p>
+            </div>
+
+                       
+          </div> 
+  
+            <div class="consejo consejoMovil wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
+              <div>
+                <h3>No rindes igual en los entrenamientos</h3>
+                <hr>
+                <p>
+                  Falso. "Esto depende de muchos factores, como el tipo de actividad física que se realice, la duración del ayuno y la adaptación al mismo. Siempre que se mantenga el consumo de calorías necesario para cada deportista, no habría reducción en el rendimiento".
+                </p>
+              </div>
+  
+              <div class="imgPlanes">
+                <img src="./Public/Img/mito5.jpg" alt="">              
+                
+              </div>            
+            </div> 
+  
+            <div class="consejo">
+              <div class="imgPlanes">
+                <img src="./Public/Img/mito6.jpg" alt="">      
+              </div> 
+              
+              <div>
+                <h3>Con este ayuno te mareas y te cansas rápido</h3>
+                <hr>
+                <p>
+                  Aquí depende de cada persona. "Puede que al principio sí. El ayuno requiere un periodo de adaptación. Mientras más veces ayunes, más tiempo podrás pasar sin ingerir alimentos. Lo ideal es empezar de forma progresiva, y adaptar el organismo".
+                </p>
+              </div>       
+          </div>
+        </div>
+    </section>
+    </main>
+
+
+    <footer class="contenedorFooter">
+
+      <div class="footer1">
+          <div class="queruTech">
+              <h3 class="fuenteAppNav">NutriPlan</h3>
+              <p>El ayuno intermitente es actualmente una de las tendencias <br> para tener buena forma y salud más populares del mundo. <br> Las personas suelen ponerlo en práctica para perder peso, <br> mejorar su salud y simplificar sus estilos de vida.</p>
+              <div class="iconos">
+                  <img  src="./Public/Img/facebook.png" width="35px" height="35px" alt="">
+                  <img  src="./Public/Img/instagram.png" width="35px" height="35px" alt="">
+              </div>              
+          </div>
+          <div class="explorar">
+              <h4>Explorar</h4>
+              <a data-scroll href="#sctBanner">Inicio</a>
+              <a href="perfil.html">Perfil</a>
+              <a data-scroll href="#sctBeneficios">Beneficios</a>              
+              <a data-scroll href="#sctExpertos">Expertos</a>
+              <a data-scroll href="#sctplanesAyuno">Planes</a>
+              <a data-scroll href="#sctMitos">Consejos</a>
+              <a data-scroll href="#sctConsejos">Mitos</a>   
+              <a href="landingPageGrupo.html">QueruTech</a>           
+  
+          </div>
+          <div class="visitenos">
+              <h4>Visítenos</h4>
+              <p>
+                San José, Barrio Don Bosco, 200 metros sur de <br> Pizza Hut, Paseo Colón, San José.
+              </p>
+          </div>
+          <div class="contactenos">
+              <h4>Contáctenos</h4>
+              <div class="contactenos2">
+                  <div class="contacto">
+                      <img src="./Public/Img/llamada-telefonica.png" width="17px" height="17px" alt="">
+                      <p>+506 2552-4047</p>
+                  </div>
+                  <div class="contacto">
+                      <img src="./Public/Img/fax.png" width="17px" height="17px" alt="">
+                      <p>+506 2552-4174</p>
+                  </div>
+                  <div class="contacto">
+                      <img src="./Public/Img/correo-electronico.png" width="17px" height="17px" alt="">
+                      <p>nutriplan@gmail.com</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+      </div>
+      <div class="footer2">
+        <p>©NutriPlan. Todos los derechos reservados, 2022.</p>
+        <a href="#">Política de Privacidad | </a>
+        <a href="#">Términos y Condiciones</a>                         
+      </div>           
+  </footer> 
+
+</body>
+<!-- Footer -->
+
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Libreria WOW.JS -->
+<script src="./Public/Js/Controller/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script src="./Public/Js/Controller/modalLandingApp.js"></script>
+
+<!--ScrollTop -->
+<a class="go-top" href="#sctHeader" title="Ir arriba" data-scroll>
+  <img src="./Public/Img/flecha.png" width="50" height="50" class="img-fluid" alt="Ir arriba">
+</a> 
+
+<script src="./Public/Js/Controller/smooth-scroll.min.js"></script> 
+<script>
+    smoothScroll.init({
+    selector: '[data-scroll]', 
+    selectorHeader: null, 
+    speed:2000,
+    easing: 'easeInOutCubic', 
+    offset: 0, 
+    callback: function ( anchor, toggle ) {} 
+    });
+</script>
+</html>

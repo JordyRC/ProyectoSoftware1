@@ -1,0 +1,773 @@
+:root{
+    --1: #205374;
+    --2: #27A09E;
+    --3: #30CE88;
+    --4: #7DE393;
+    --5: #D3F5CE;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/****** Fuentes *****/
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, button, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.fuenteApp {
+    font-family: 'Dancing Script', cursive;
+    font-size: 140px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.fuenteAppNav {
+    font-family: 'Dancing Script', cursive;
+}
+
+.fuenteGrupoNav{
+    font-family: 'Homenaje', sans-serif;
+}
+
+/**** Navegación **********/
+header{
+    align-items: center;
+    background: #205374;
+    display: flex;
+    height: 75px;
+    /* justify-content: space-between; */
+    gap: 450px;
+    padding-left: 40px;
+    padding-right: 70px;  
+}
+
+.menuFijo {
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {    
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.navUsuario{
+    display: flex;
+    gap: 2px;
+}
+
+.navUsuario a:hover{
+    color: #7DE393;    
+    transition: color 2s;
+}
+
+header nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover{    
+    
+    color: #7DE393;    
+    transition: color 2s;
+}
+
+/*********** Banner Planes Ayuno ********/
+.bannerActFisica{
+    background-image: url("../Img/lily-banse--YHSwy6uqvk-unsplash.jpg");
+    background-size: cover;
+	background-position: center;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
+    height: 650px;
+    width: 100%;
+}
+
+.bannerActFisica h1 {
+    text-align: center;
+    font-size: 80px;
+    padding-top: 250px;
+    color: #ffffff;
+    
+}
+
+
+/* Boton Registrar */
+body form {
+    width: fit-content;
+    margin: auto;
+}
+
+input[type=text],
+input[type=date],
+input[type=number],
+input[type=time],
+input[type=password],
+select, 
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button]{
+    background-color: #205374;
+    width: 30%;
+    color: white;
+
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type=button]:hover{
+    background-color: #30CE88;
+}
+
+/********* Seccion Planes *************/
+.preguntaPlan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.preguntaPlan h2{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px ;
+    color: #205374;
+}
+
+
+#sctPlanes {
+    display: flex;
+    padding-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+#sctPlanes li {
+    margin-bottom: 20px;
+}
+
+.modalesPlanes {
+    display: block;
+    margin-top: 50px;
+}
+
+.textoPlanes h2 {
+    font-size: 45px;
+    color: #205374;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.textoPlanes p {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.textoPlanes ul {
+    font-size: 28px;
+}
+
+
+.modalesPlanes img {
+    width:340px; 
+    height:244px;
+    border-radius: 15px;
+}
+
+
+.planes1{
+    gap: 50px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.plan1 {
+    display: block;    
+}
+
+
+.plan1 .botonVerPlan {
+    /* margin-left: 100px;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #205374;
+    color: red;
+
+    border: 2px solid #CAD3C8;
+    border-radius: 5px;
+    color: #CAD3C8;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    width: 150px; */
+
+    background: #205374;
+    border: 2px solid #CAD3C8;
+    border-radius: 5px;
+    color: #CAD3C8;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    width: 120px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.botonVerPlan:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 1s;
+}
+
+.plan1 .botonCerrarPlan:hover {
+    background-color: #27A09E;
+}
+
+.plan1 .botonCerrarPlan {
+    background: #205374;
+    border: 2px solid #CAD3C8;
+    border-radius: 5px;
+    color: #CAD3C8;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    width: 120px;
+    margin-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+/*********** Decripciones de los planes  y modales   ********/
+
+/*Plan 16:8*/
+
+.plan1ModalContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    font-size: 25px;
+    
+}
+.show1 {
+    pointer-events: auto;
+    opacity: 1;
+    }
+
+.modalPlan{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.headermodal {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    background-color: #27A09E;
+    
+}
+.headermodal h2{
+    margin-left: 15px;
+    color: #fff;      
+    font-size: 24px;
+    text-align: left;
+}
+.textoModal p{
+    opacity: 0.7;
+    font-size: 25px;
+    margin: 30px 50px;
+}
+
+#closePlan1{
+    height: 50px;
+    width: 100px;
+}
+    
+/*Plan 14:10*/
+
+
+.plan2ModalContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    font-size: 25px;
+}
+.show2 {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+#closePlan2{
+    height: 50px;
+    width: 100px;
+}
+
+/*Plan 18:6*/
+
+.plan3ModalContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    font-size: 25px;
+}
+.show3 {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+#closePlan3{
+    height: 50px;
+    width: 100px;
+}
+
+/*Plan 20:4*/
+
+
+
+.plan4ModalContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    font-size: 25px;
+}
+.show4 {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+#closePlan4{
+    height: 50px;
+    width: 100px;
+}
+
+
+/*********** INICIO tabla y modal Registro   ********/
+
+/***** Inicio Registro del Plan *****/
+.tituloTabla {
+    font-size: 45px;
+    color: #205374;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#registrosPlan {
+    font-size: 18px;
+    border-collapse: collapse;
+}
+
+#registrosPlan tr {
+    height: 40px;
+}
+
+#registrosPlan td{
+    font-size: 30px;
+    padding: 15px;
+    text-align: center; 
+    
+}
+
+#registrosPlan tr th {
+    padding: 15px;
+    text-align: center;
+}
+
+
+#registrosPlan thead tr {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#registrosPlan thead tr th {
+    color: #205374;
+    font-size: 30px;
+}
+
+#registrosPlan  td {
+    border-bottom: 2px solid #27A09E;
+    font-size: 27px;
+}
+
+#registrosPlan tr:hover{
+    background: #27A09E;
+    color: #fff;
+}
+/**************************INICIO FORM ***************/
+.formRegistroPlan{
+    text-align: left;
+    background-color: #fff;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 10px;
+}
+
+.headerform{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding-top: 15px;
+    background: #27A09E;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #fff;
+
+}
+
+.fechaInicio{
+    margin: 20px;
+    font-size: 19px;
+    /* padding: 10px; */
+    
+}
+.horaInicio{
+    font-size: 19px;
+    /* padding-bottom: 10px; */
+    margin: 10px;
+}
+.fechaFinal{
+    font-size: 19px;
+    /* padding-bottom: 10px; */
+    margin: 10px;
+}
+
+.horaFinal{
+    font-size: 19px;
+    /* padding-bottom: 10px; */
+    margin: 10px;
+}
+#dateInicio{
+    font-size: 17px;
+    border-radius: 4px;
+    height: 45px;
+    text-align: left;
+   
+}
+#timeIncio{
+    font-size: 17px;
+    border-radius: 4px;
+    height: 45px;
+    text-align: left;
+    
+}
+
+#dateFinal {
+    font-size: 17px;
+    border-radius: 4px;
+    height: 45px;
+    text-align: left;
+    
+}
+
+#timeFinal{
+    font-size: 17px;
+    border-radius: 4px;
+    height: 45px;
+    text-align: left; 
+   
+}
+
+#opcionesPlanes{
+    font-size: 17px;
+    border-radius: 4px;
+    height: 45px;
+    text-align: left; 
+}
+
+.listaOpciones{
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.planRegistro{
+    padding-top: 30px;
+    /* padding-left: 45%; */
+}
+.tablaRegistos{
+
+    margin-left: 130px;
+    margin-top: 70px;
+    width: 5000px;
+    margin-bottom: 130px;
+}
+
+/**BOTON REGISTRAR PLAN*/
+#registreSuPlan {
+    background: #205374;
+    border: 2px solid #CAD3C8;
+    border-radius: 5px;
+    color: #CAD3C8;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    width: 120px;
+}
+
+#registreSuPlan:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 1s;
+}
+
+/*Inicio Ventana Modal Form */
+
+.cerrar {
+    color: white; 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.cerrar:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+.registroPlanModalContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+.showRegistroPlan {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modalForm{
+    margin-top: 80px;
+    background-color: #fff;
+    /* width: 500px; */
+    /* height: 500px; */
+    /* max-width: 100%; */
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 20px;
+}
+.modalForm h2{
+    margin: 0;
+}
+.modalForm p{
+    opacity: 0.7;
+    font-size: 16px;
+}
+ #agregarPlan{
+    background: #205374;
+    border: 2px solid #CAD3C8;
+    border-radius: 5px;
+    color: #CAD3C8;
+    cursor: pointer;
+    font-size: 19px;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#agregarPlan:hover{
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 1s;
+} 
+
+/* .modalFooter{
+    background-color: #27A09E;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 40px;
+    width: 600px;
+} */
+
+/***** Fin Registro del Plan *****/
+
+
+/*********** FIN tabla y modal Registro    ********/
+
+/***************** Footer ************************/
+
+.contenedorFooter {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 50px;
+    background-color: #205374;
+    color: #ffffff;
+    text-align: left;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.contenedorFooter h3 {
+    font-size: 30px;
+}
+
+.contenedorFooter h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contenedorFooter a {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.contenedorFooter p {
+    font-size: 15px;
+}
+
+.footer1{
+    display: flex;
+    margin-bottom: 0px;
+    gap: 80px;
+}
+
+.queruTech {
+    margin-right: 100px;
+}
+
+.explorar a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contactenos .contacto {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+
+/* Animación iconos */
+.iconos img:hover  {
+	transition: all 1s ease-in-out;
+	transform: rotate(360deg);
+  }
+
+
+  .footer2  {
+    text-align: right;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .footer2 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .footer3 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
