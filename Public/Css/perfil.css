@@ -130,6 +130,19 @@ header nav a:hover{
 }
 
 /********* Seccion Datos y Foto *********/
+
+#tblPersonas {
+    width: 100%;
+    /* margin-top: 20px; */
+    text-align: center;
+  } 
+
+#tblPersonas th {
+    font-size: 15px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+} 
+
 .tituloDatos{
     text-align: center;
     font-size: 35px;
@@ -148,22 +161,18 @@ header nav a:hover{
     text-align: center;
     /* margin-right: 130px;
     margin-left: 130px; */
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.datosPersonales{
-    
-    display: flex;
-    gap: 80px;    
-    text-align: left;
+.datosPersonales{  
     justify-content: center;
     align-items: flex-start;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
-.datosPersonales li {
-    font-size: 27px;
+.datosPersonales th {
+    font-size: 15px;
     font-weight: bold;
 }
 

@@ -9,9 +9,9 @@ function mostrarModal(modal) {
     modal.style.display="block";
 }
 
-botonRegistrarUsuario.onclick = function() {
-    mostrarModal(modalLandingApp)
-} 
+// botonRegistrarUsuario.onclick = function() {
+//     mostrarModal(modalLandingApp)
+// } 
 
 //Cerrar Modal
 

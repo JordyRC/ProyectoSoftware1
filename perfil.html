@@ -15,6 +15,7 @@
     <!-- Libreria Animación Animate.css -->
     <link rel="stylesheet" href="./Public/Css/animate.css">
     <link rel="stylesheet" href="./Public/Css/perfil.css">
+    <link rel="stylesheet" href="./Public/Css/Persona.css">
 </head>
 <body>
 
@@ -59,8 +60,84 @@
         </div>
         
         <section class="sctDatosPerfil">
+
+          <div class="datosPersonales">      
             
-            <div class="datosPersonales">                
+            <div class="contenedorBotonyFiltro">
+              <div id="divbtn">
+              <!-- Esta accion onclick se llama debajo de la ACCION BOTON EDITAR en PersonaController.js -->
+                  <input type="button" id="btnCrea" onclick="location.href='GestionarPersona.html?_id=crear&nombre=franklin'" value="Registrar Persona">
+              </div>
+              <div id="FiltroTablas">
+                  <label for="txtFiltro">Filtrar</label>
+                  <input type="text" id="txtFiltro">
+              </div>
+          </div>
+            
+            <table id="tblPersonas"> 
+              <thead>
+                  <tr>
+                      <th>Tipo de ID</th>
+                      <th>Identificación</th>
+                      <th>Nombre</th>
+                      <th>Correo</th>
+                      <th>Sexo</th>
+                      <th>Nacimiento</th>
+                      <th>Edad</th>
+                      <th>Estado</th>
+                      <th>Rol</th>
+                      <th>Acciones</th>
+                  </tr>
+              </thead>
+              
+              <!-- Tabla tbdPersonas llamada para limpiarse en PersonaController punto (5) linea 39-->
+              <tbody id="tbdPersonas">
+  
+              </tbody>
+              <tfoot id="tftPersonas">
+  
+              </tfoot>
+          </table>
+            
+            <!-- <table id="tblPersonas"> 
+                
+                <div class="datos1">
+                  <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Edad</th>
+                        <th>Estatura(m)</th>
+                        <th>Sexo</th>                        
+                    </tr>
+                    <tr>
+                      <th>Sexo</th>
+                      <th>Correo</th>
+                      <th>Peso Idóneo(kg)</th>
+                      <th>IMC</th>
+                      <th>Plan de ayuno</th>
+                    </tr>
+                    <tr>
+                      <th>Proteína(recomendada)</th>
+                      <th>Agua(recomendada)</th>
+                    </tr>
+                    <tr>
+                      <th>Acciones</th> 
+                    </tr>
+
+                  </thead>
+                </div>                
+            
+                  <tbody id="tbdPersonas">
+
+                  </tbody>
+                  <tfoot id="tftPersonas">
+
+                  </tfoot>
+              </table> -->
+
+            </div>
+            <!-- <div class="datosPersonales">                
                 <div class="datos1">                    
                     <ul>
                         <li>Nombre</li>
@@ -105,7 +182,7 @@
                     <p>ml</p>
                   </ul>                       
               </div>                
-            </div>
+            </div> -->
         </section>
 
 
@@ -202,16 +279,24 @@
         </div>           
     </footer> 
 
-
-      
-
-    
-</body>
-
 <!-- Libreria WOW.JS -->
         <script src="./Public/Js/Controller/wow.js"></script>
         <script>
         new WOW().init();
         </script>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./Public/Js/Constantes.js"></script>
+    <script src="./Public/Js/Service/GeneralService.js"></script>
+    <script src="./Public/Js/Controller/PersonaController.js"></script>
+      
+
+    
+</body>
+
+
 
 </html>

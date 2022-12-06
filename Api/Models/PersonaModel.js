@@ -5,11 +5,37 @@
 // 1) Llamamos a Mongoose de la linea 7 de server.js
 const mongoose = require("mongoose");
 
-// 2) Definimos el esquema schemaPersona (plantilla, estructura de BD)
+// 2) Definimos el esquema schemaPersona (plantilla)
 const schemaPersona = new mongoose.Schema({
+    // required = si es un campo es obligatorio-requerido o no
+    // unique = si es un valor unico o no
+    TipoIdentificacion:{type:Number, required: true, unique:false},
     Identificacion:{type: String, required: true, unique:true},
     Nombre:{type: String, required: true, unique:false},
-    Apellido:{type: String, required: true, unique:false},
+    Apellido1:{type: String, required: true, unique:false},
+    Apellido2:{type: String, required: true, unique:false},
+    Sexo:{type: String, required: true, unique:false},
+    Nacimiento:{type: String, required: true, unique:false},
+    Edad:{type: Number, required: true, unique:false},
+    Estado:{type: String, required: true, unique:false},
+    Email:{type: String, required: true, unique:true},
+    Password:{type: String, required: true, unique:false},
+    Rol:{type: Number, required: true, unique:false},
+    FotoPerfil:{type: String, required: true, unique:false},
+    // Subdocumentos (arreglos de datos dentro de una misma conexion(coleccion de datos dentro de otra coleccion)(InteresesPersonales - Tarjetas))
+    InteresesPersonales:[
+        {
+            Intereses: {type: String, required: true, unique: false} 
+        }
+    ],
+    Tarjetas:[
+        {
+            Nombre:{type: String, required: true, unique:false},
+            Apellido1:{type: String, required: true, unique:false},
+            NumeroTarjeta:{type: String, required: true, unique:false},
+            CVV:{type: String, required: true, unique:false},
+        }
+    ]
 });
 
 
